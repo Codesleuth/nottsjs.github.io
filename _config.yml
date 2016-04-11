@@ -1,0 +1,37 @@
+# Site settings
+title: NottsJS
+name: NottsJS
+email: contact@nottsjs.org
+description: |
+  NottsJS is a meetup for developers and anyone else interested in development.
+  We meet every 2nd Wednesday of the month to talk about Node, Javascript, Full Stack development in the Nottingham area.
+tagline: Nottingham's Javascript Meetup
+baseurl: ""
+url: "https://nottsjs.org/"
+permalink: /:year/:month/:title
+paginate: 5
+paginate_path: "/page/:num"
+timezone: Europe/London
+
+twitter:
+  username: nottsjs
+  
+github:
+  username: nottsjs
+  image: https://raw.githubusercontent.com/nottsjs/nottsjs.github.io/master/img/logo.png
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+excerpt_separator: <!--more-->
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "meetup"
+      
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
